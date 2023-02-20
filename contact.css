@@ -1,0 +1,25 @@
+.content{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transform: translateY(-50vh);
+}
+
+h1{
+    font-size: 50px;
+    color: #fff;
+}
+
+
+a{
+    opacity: 50%;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+
+}
+
+a:hover{
+    opacity: 100%;
+}

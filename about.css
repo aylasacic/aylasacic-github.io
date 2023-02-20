@@ -1,0 +1,72 @@
+.idcard{
+    margin: 0 auto;
+    /* text-align: center; */
+    z-index: 9;
+    margin-right: 200px;
+    position: absolute;
+    transform: translateY(-700px);
+    /* transform: translateX(-100px); */
+    
+  }
+  
+  .aboutme{
+    
+    width:100%;
+    height:auto;
+    /* background-color:#655cb0;
+    background-color: ; */
+    background: transparent;
+    display:flex;
+    transform: translateY(-70vh);
+
+
+  }
+  
+.text{
+    margin-top: 20px;
+    display: inline-block;
+    margin-right: 20px;
+    z-index: 8;
+    height: 400px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+  .text h1{
+    /* box-sizing: border-box; */
+    /* width: 70vw; */
+    
+    color: #fff;
+    
+  }
+  
+  .portrait{
+    display: inline-block;
+    
+    z-index: 9;
+    width: auto;
+    height: auto;
+    /* transform: translateY(00vh); */
+  }
+  
+  html{
+    background: #655cb0;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(bg.gif);
+    visibility: visible; 
+    font-display: inherit;  
+  }
+  
+  canvas{
+    border: #fff;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: thick;
+    margin-left: 20px;
+
+  }
+
+a:hover{
+    color:aquamarine
+}

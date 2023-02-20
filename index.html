@@ -1,24 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+    <title>Home</title>
     <head>
-        <title>Example for Comm Lab Week 2</title>
+        <title>Assignment 1</title>
+		<link rel="stylesheet" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <style>
+            body {
+              visibility: hidden;
+              opacity: 0;
+            }
+        </style>
+
     </head>
+    
+    <noscript>
+        <style>
+          body {
+            visibility: visible;
+            opacity: 1;
+          }
+        </style>
+      </noscript>
     <body>
-        <h1>Welcome to Communication Lab!</h1>
-        <h3>This example is for Class Week 2, Introduction to HTML</h3>
-        <p>This is an example of a page built with HTML.</p>
-        <p>Here is a <a href="https://nyuad.nyu.edu">link to the NYUAD site</a></p>
-        <ul>
-            <li>Academics</li>
-            <li>Admissions</li>
-            <li>Research</li>
-            <li>Campus Life</li>
-        </ul>
-        <br>
-        <p>Below, you will find an image of NYUAD.</p>
-        <!-- <img src="img/nyu.jpg" width="500" height="333"> -->
-        <video width="540" height="960" controls>
-        <source src="video.MOV">
-        </video>
+        <div class = "banner">
+            <div class = "navigation">
+                <img src="logo4.png" class="logo">
+                <ul>
+                    <li><a href="index.html" class="i1">Home</a></li>
+                    <li><a href="about.html" class="i2">About</a></li>
+                     <li><a href="#" class="i2">Projects</a>
+                        <ul class="dropdown">
+
+                            <li><a href="im.html">Intro to IM</a></li>
+                            <li><a href="comsl.html">Communications Lab</a></li>
+
+                        </ul>
+                        <li><a href="contact.html" class="i4">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>        
+
+        <div class = "content">
+            <!-- <div class="moon">
+                <img src="moon.png" class = "moonIMG" alt="">
+            </div> -->
+            <div class="planets">
+                <div class="cloud1" >    
+                    <img src="clouds3.gif" alt="cloud0">
+                </div>
+                <div class="planet1" >    
+                    <img src="clouds3.gif" alt="cloud1">
+                </div>
+                <div class="planet2">    
+                    <img src="clouds3.gif" alt="cloud2">
+                </div>
+                <div class="cloud3">    
+                    <img src="clouds3.gif" alt="cloud3">
+                </div>
+                <div class="cloud4">    
+                    <img src="clouds3.gif" alt="cloud4">
+                </div>
+            </div>
+        </div>
+
+        <div class="greeting">
+            <span class = "demo" id = "demo" style="font-family: VT323;"></span>
+            <span class = "cursor" id = "cursor">|</span>
+      
+            <script>
+                var i = 0;
+                var txt = 'H e l l o !';
+                var speed = 100;
+
+                function typeWriter() {
+                if (i < txt.length) {
+                    document.getElementById("demo").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                    }
+                }
+
+                typeWriter()
+            </script>
+
+            
+            <script>
+                var speed = 300
+                setInterval(() => {
+                if(cursor) {
+                    document.getElementById('cursor').style.opacity = 0;
+                    cursor = false;
+                }else {
+                    document.getElementById('cursor').style.opacity = 1;
+                    cursor = true;
+                }
+                }, speed);
+
+            </script>
+
+            
+                <form  method="POST" 
+                action="https://script.google.com/macros/s/AKfycbxRJYtZesgfSl1JVeOXC_7-ixI4F3Iy4gXJHTQL0tMtGIAo1Ca6nYSyZ-qu64v8vwzY/exec"
+                id = "my-form">
+                <input name="Message" type="message" placeholder="Write something for me!" required>
+                <div class="btn"><button type="submit">Send</button></div>
+                </form>
+            
+            <script>
+                window.addEventListener("load", function() {
+                const form = document.getElementById('my-form');
+                form.addEventListener("submit", function(e) {
+                    e.preventDefault();
+                    const data = new FormData(form);
+                    const action = e.target.action;
+                    fetch(action, {
+                    method: 'POST',
+                    body: data,
+                    })
+                    .then(() => {
+                        alert("Succesfully sent the message!");
+                    })
+                });
+                });
+            </script>
+
+        </div>
+        
+        
     </body>
+    <script>
+        function showTheme() {
+  // Check Local Storage then apply dark theme if it's active
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+            showTheme();
+            showContent();
+        });
+    </script>
 </html>

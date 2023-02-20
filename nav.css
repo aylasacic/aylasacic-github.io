@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins: 300, 400, 500, 600, 700, 800, 900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=VT323: 300, 400, 500, 600, 700, 800, 900&display=swap');
+
+@font-face {
+  font-family: 'FVT323';
+  font-style: VT323;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css?family=VT323');
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: VT323;
+  box-sizing: border-box;
+  /* //background-color: #001024; */
+}
+
+body{
+  background: black;
+  height: 100vh;
+  /* background-size: cover; */
+  background-image: url(flickerfae.gif);
+  visibility: visible; 
+  background-repeat: repeat-x;
+  font-display: inherit;
+  background-size: contain;
+}
+
+.banner{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 7;
+}
+
+.navigation{
+  background-color: #655cb0;
+  /* padding: 15px; */
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: inherit;
+}
+
+
+.navigation ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 30px;
+  position: relative;
+}
+
+.navigation ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 20px;
+
+  position: relative;
+  overflow: hidden;
+  opacity: 50%;
+}
+
+
+.navigation ul li a:hover{
+  /* background-color: white; */
+  color: #fff;
+  /* border-radius: 20px; */
+  opacity: 100%;
+  transition-duration: 0.5s;
+}
+
+
+li:hover {
+  cursor: pointer;
+}
+
+ul li ul {
+  width: 270px;
+  height: 100px;
+  
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  margin-top: 0.5rem;
+  left: 0;
+  display: none;
+  background: rgba(101, 92, 176, 0.6);
+  /* background-color: #655cb0; */
+  display: table;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  z-index: 7;
+  border-color: #fff;
+  border-style: solid;
+  border: 3px solid rgba(255, 255, 255, .5);
+  transition: all 0.5s ease;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+
+}
+
+.banner .navigation ul li ul li a{
+  font-size: 25px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo{
+  
+  width: 15%;
+  height: 15%;
+  padding: auto;
+  
+  margin-left: 25px;
+  margin-top: 5px;  
+  cursor: pointer;
+  object-fit: contain;
+}

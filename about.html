@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment 1</title>
+        <link rel="stylesheet" href="about.css">
+		<link rel="stylesheet" href="nav.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <style>
+            body {
+              visibility: hidden;
+              opacity: 0;
+            }
+        </style>
+        
+    </head>
+
+    <noscript>
+        <style>
+          body {
+            visibility: visible;
+            opacity: 1;
+          }
+        </style>
+      </noscript>
+    <body>
+        <div class = "banner">
+            <div class = "navigation">
+                <img src="logo4.png" class="logo">
+                <ul>
+                    <li><a href="index.html" class="i1">Home</a></li>
+                    <li><a href="about.html" class="i2">About</a></li>
+                     <li><a href="#" class="i2">Projects</a>
+                        <ul class="dropdown">
+
+                            <li><a href="im.html">Intro to IM</a></li>
+                            <li><a href="comsl.html">Communications Lab</a></li>
+
+                        </ul>
+                    <li><a href="contact.html" class="i4">Contact</a></li>
+                </ul>
+            </div>
+        </div>        
+
+        <div class = "aboutme">
+            <div class="portrait" id = "portrait"></div>
+            <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
+            <script src="portrait/sketch.js"></script>
+            <div class="text" style="font-size: 15px;">
+                <h1>Hello!
+                I am Ajla and I am a Sophmore from Bosnia and Herzegovina.
+                I am majoring in Computer Science with a Minor in Interactive Media and Applied Maths. 
+                <br><br>
+                On the left you can see my self portrait as I do not like to take photos of myself. 
+                <br><br>
+                <b>Fun fact:</b> My name comes from the Turkish word <i>Ay</i> meaning <i>Moon</i>, which is why I choose to style my 
+                webpage in a space theme. 
+                <br><br>
+                <b>Favourite color:</b> <span style="color: plum;">lilac</span><br><br>
+                <b>Favorite word:</b> 
+                <a href="#" onClick="MyWindow=window.open('sevap.html','_blank','width=600,height=300');"
+                style = 
+                "color: #fff;
+                
+                
+                ">
+                    Sevap</a>
+
+                </h1>
+            </div>
+                
+            
+            
+            
+        </div>
+        
+    </body>
+    <script>
+        function showTheme() {
+  // Check Local Storage then apply dark theme if it's active
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+            showTheme();
+            showContent();
+        });
+    </script>
+    <!-- <style>html{visibility: visible;opacity:1;}</style> -->
+</html>

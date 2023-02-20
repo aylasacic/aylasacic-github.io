@@ -1,0 +1,49 @@
+.content{
+  background: linear-gradient(#685eb2,#7e6bbd);
+  height: max-content;
+  text-align: center;
+  margin: auto;
+  transform: translateY(-60vh);
+}
+.projects{
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: inherit;
+  z-index: 5;
+  text-align: center;
+}
+
+h1{
+  color: #fff;
+  font-size: 35px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.projects ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 30px;
+  position: relative;
+  font-size: 30px;
+  transition: all 0.5s ease;
+  opacity: 50%;
+}
+.projects ul li:hover{
+  list-style: none;
+  display: inline-block;
+  margin: 0 30px;
+  position: relative;
+  opacity: 100%;
+  
+}
+
+
+
+a{
+  color: #fff;
+}
