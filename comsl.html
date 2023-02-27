@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>Communications Lab</title>
+		<link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="comsl.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <style>
+            body {
+              visibility: hidden;
+              opacity: 0;
+            }
+        </style>
+    </head>
+    
+    <noscript>
+        <style>
+          body {
+            visibility: visible;
+            opacity: 1;
+          }
+        </style>
+      </noscript>
+    <body>
+        <div class = "banner">
+            <div class = "navigation">
+                <img src="logo4.png" class="logo">
+                <ul>
+                    <li><a href="index.html" class="i1">Home</a></li>
+                    <li><a href="about.html" class="i2">About</a></li>
+                     <li><a href="#" class="i2">Projects</a>
+                        <ul class="dropdown">
+
+                            <li><a href="im.html">Intro to IM</a></li>
+                            <li><a href="comsl.html">Communications Lab</a></li>
+
+                        </ul>
+                    <li><a href="contact.html" class="i4">Contact</a></li>
+                </ul>
+            </div>
+        </div>        
+
+        <div class="content">
+            <div class="text">
+                <h1>I am taking Communications Lab during Spring 2023 semester. The class 
+                surveys various technologies to develop a fundamental skill set for producing a variety of different media.
+                Here are some of my projects to date:
+            </h1><br><br>
+            </div>
+            
+            <div class="projects">
+                <ul>
+                    <span class = "element"><li><a href="#" onClick="MyWindow=window.open('video.html','MyWindow','width=600,height=800'); return false;">30MMF Video</a></li></span>
+                    <span class = "element"><li><a href="#" onClick="MyWindow=window.open('art.html','MyWindow','width=600,height=800'); return false;">Art</a></li></span>
+                </ul>
+            </div> 
+        </div> 
+
+        
+        </div> 
+    </body>
+    <script>
+        function showTheme() {
+        // Check Local Storage then apply dark theme if it's active
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+            showTheme();
+            showContent();
+        });
+    </script>
+</html>
